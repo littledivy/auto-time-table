@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Time Table</title>
+    <link href="http://fonts.googleapis.com/css?family=Raleway:400,300,700" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/table.css" />
+    <script src="catalog.js"></script>
+    <script src="functions.js"></script>
+    <script type="text/javascript" src="js/type_writer.js"></script>
+	<script type="text/javascript" src="js/type.js"></script>
+</head>
+<body class="color-1" id="title" onload="getCurrentDay();">
+    <div class="container">
+        <!-- Top Navigation  -->
+        <div class="codrops-top clearfix">
+            <a onclick="moveBack()"><span>Previous Day</span></a>
+            <a onclick="moveNext()"><span>Next Day</span></a>
+        </div>
+        <header class="codrops-header">
+            <h1 id="day"></h1>
+            <span id="time"></span>
+        </header>
+                <div class="container">
+                        <h2 id="day"></h2>
+                        <ul class="responsive-table">
+                          <li class="table-header">
+                            <div class="col col-1">Sr No.</div>
+                            <div class="col col-2">Peroid</div>
+                            <div class="col col-3">Duration</div>
+                            <div class="col col-4">Teacher</div>
+                          </li>
+                          <div id="append-from-db">
+
+                          </div>
+                        </ul>
+                      </div>
+        
+       
+    </div><!-- /container -->
+</body>
+</html>
